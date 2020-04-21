@@ -8,4 +8,7 @@ describe('QuantityMeasurement',function(){
     it("given 0 feet and 1 feet should return not equal",function () {
         assert.notEqual(quatityMesure.unitMeasurement(0,1),true);
     })
+    it("given 0 feet and null should return null",function(){
+        assert.isNull(null,quatityMesure.unitMeasurement(0,null));
+    })
 });
