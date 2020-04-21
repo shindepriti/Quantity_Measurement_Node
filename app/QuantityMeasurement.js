@@ -2,20 +2,37 @@ console.log("Wel-Come To Quantity Measurement")
 
 module.exports = {
 
-    unitMeasurement(unitType, unitValue){
-        
-        var unitTypes = ["feet","inch"];
-        var result,input = unitValue
+    unitMeasurement(unitType1, unitType2, unitValue) {
+        var unitTypes = ["feet", "inch","yard"];
+        var result, input = unitValue;
 
-        if(unitTypes[0] == unitType){
+       if (unitTypes[0] == unitType1 && unitTypes[1] == unitType2) {
             result = 12 * input;
+            return result;
         }
-        else{
-            result = 1*input;
+        // if (unitTypes[1] == unitType1 && unitTypes[0] == unitType2) {
+        //     result = parseFloat(input / 12);
+        //     return result;
+        // }
+        if(unitType1==unitTypes[0] && unitType2==unitTypes[2]){
+            result=(input/3);
+            return result;
         }
-        if (unitTypes[1] == unitType){
-            result = 1*input;
-        }       
+        if(unitType1==unitTypes[2] && unitType2==unitTypes[0]){
+            result=input*3;
+            return result
+        }
+        if(unitType1==unitTypes[2] && unitType2==unitTypes[1]){
+            result=input*36;
+            return result;
+        }
+        if(unitType1==unitTypes[1] && unitType2==unitTypes[2]){
+            result=input/36;
+            return result;
+        }
+        else {
+            result = 1 * input;
+        }
         return result;
     }
 }
