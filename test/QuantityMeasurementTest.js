@@ -41,6 +41,8 @@ describe('QuantityMeasurement',function(){
     it(" given 1 inch and 1 yard should return not equal",function(){
         assert.notEqual(1,quatityMesure.unitMeasurement("inch","yard",1));
     })
+    it(" given 1 yard should be equal to 36 inch",function(){
+        assert.equal(36,quatityMesure.unitMeasurement("yard","inch",1));
+    })
     
-   
 });
