@@ -10,10 +10,6 @@ module.exports = {
             result = 12 * input;
             return result;
         }
-        // if (unitTypes[1] == unitType1 && unitTypes[0] == unitType2) {
-        //     result = parseFloat(input / 12);
-        //     return result;
-        // }
         if(unitType1==unitTypes[0] && unitType2==unitTypes[2]){
             result=(input/3);
             return result;
