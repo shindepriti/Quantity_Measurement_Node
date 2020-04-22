@@ -59,5 +59,11 @@ describe('QuantityMeasurement',function(){
     it(" given 1 litre should be equal to 1000 ml",function(){
         assert.equal(1000,quatityMesure.unitMeasurement("litre","ml",1));
     })
+    it(" given 1 kilogram should be equal to 1000 gram",function(){
+        assert.equal(1000,quatityMesure.unitMeasurement("kilogram","gram",1));
+    })
+    it(" given 1 tonne should be equal to 1000 kilogram",function(){
+        assert.equal(1000,quatityMesure.unitMeasurement("tonne","kilogram",1));
+    })
    
 });

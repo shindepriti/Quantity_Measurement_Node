@@ -18,5 +18,8 @@ describe("Additition of Two Units",function(){
     it("given 1 litre and 1000 milliliter should return 2 litre",function(){
         assert.equal(2,unitAddition.additionOfMeasurement("litre",1,"ml",1000,"litre"))
     })
+    it("given 1 tonne and 1000 gram should return 1001 kilogram",function(){
+        assert.equal(1001,unitAddition.additionOfMeasurement("tonne",1,"gram",1000,"kilogram"))
+    })
 
 })
