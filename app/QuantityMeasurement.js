@@ -34,5 +34,13 @@ module.exports = {
             result = 1 * input;
         }
         return result;
+    },
+
+    additionOfMeasurement(unitType1,unitValue1,unitType2,unitValue2,unitType3){
+            var value1 = this.unitMeasurement(unitType1,unitType3,unitValue1);
+            var value2 = this.unitMeasurement(unitType2,unitType3,unitValue2);
+            var unitAddition = value1+value2;
+            return unitAddition;
+
     }
 }
