@@ -12,5 +12,11 @@ describe("Additition of Two Units",function(){
     it("given 1 feet and 1 feet should return 24 length in inch",function(){
         assert.equal(24,unitAddition.additionOfMeasurement("feet",1,"feet",1,"inch"))
     })
+    it("given 1 gallon and 1 litre should return 7.56 length in litre",function(){
+        assert.equal(7.56,unitAddition.additionOfMeasurement("gallon",1,"litre",3.78,"litre"))
+    })
+    it("given 1 litre and 1000 milliliter should return 2 litre",function(){
+        assert.equal(2,unitAddition.additionOfMeasurement("litre",1,"ml",1000,"litre"))
+    })
 
 })
