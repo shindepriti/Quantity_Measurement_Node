@@ -3,7 +3,7 @@ console.log("Wel-Come To Quantity Measurement")
 module.exports = {
 
     unitMeasurement(unitType1, unitType2, unitValue) {
-        var unitTypes = ["feet", "inch","yard","centimeter"];
+        var unitTypes = ["feet", "inch","yard","centimeter","gallon","litre","ml"];
         var result, input = unitValue;
 
        if (unitTypes[0] == unitType1 && unitTypes[1] == unitType2) {
@@ -27,7 +27,15 @@ module.exports = {
             return result;
         }
         if(unitType1==unitTypes[1] && unitType2==unitTypes[3]){
-            result=input*2.5
+            result=input*2.5;
+            return result;
+        }
+        if(unitType1==unitTypes[4] && unitType2==unitTypes[5]){
+            result=input*3.78;
+            return result;
+        }
+        if(unitType1==unitTypes[5] && unitType2==unitTypes[6]){
+            result=input*1000;
             return result;
         }
         else {

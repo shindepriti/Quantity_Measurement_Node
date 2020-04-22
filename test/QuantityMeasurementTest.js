@@ -53,5 +53,11 @@ describe('QuantityMeasurement',function(){
     it(" given 2 inch should be equal to 5 inch",function(){
         assert.equal(5,quatityMesure.unitMeasurement("inch","centimeter",2));
     })
+    it(" given 1 gallon should be equal to 3.78 litre",function(){
+        assert.equal(3.78,quatityMesure.unitMeasurement("gallon","litre",1));
+    })
+    it(" given 1 litre should be equal to 1000 ml",function(){
+        assert.equal(1000,quatityMesure.unitMeasurement("litre","ml",1));
+    })
    
 });
